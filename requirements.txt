@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]   # Để chạy server FastAPI
+customtkinter       # Giao diện GUI
+requests            # Nếu frontend cần gọi API từ backend
+opencv-python       # Nếu frontend cần xử lý ảnh
+numpy               # Nếu frontend cần xử lý ảnh
