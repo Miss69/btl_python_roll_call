@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Date
-from frontend.utils.database import Base
+from . import Base
 from sqlalchemy.orm import relationship
 
 class Employee(Base):

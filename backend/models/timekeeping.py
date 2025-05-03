@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, DateTime, String, ForeignKey
-from frontend.utils.database import Base
+from . import Base
 from sqlalchemy.orm import relationship
 
 class Timekeeping(Base):

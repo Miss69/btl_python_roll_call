@@ -1,13 +1,12 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from contextlib import contextmanager
+from .models import Base
 
 # Kết nối database
 SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:tung12345@localhost/btl_python"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-Base = declarative_base()
 
 # Dependency để lấy session DB
 def get_db():
