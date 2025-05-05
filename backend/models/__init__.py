@@ -1,7 +1,5 @@
-from sqlalchemy.ext.declarative import declarative_base
+from .base import Base
 from .employee import Employee
 from .timekeeping import Timekeeping
-
-Base = declarative_base()
 
 __all__ = ['Base', 'Employee', 'Timekeeping'] 
